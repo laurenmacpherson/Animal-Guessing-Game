@@ -1,0 +1,160 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+unittest is a Catch v2.0.1 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Tests
+  First Constructor
+-------------------------------------------------------------------------------
+unittest.cpp:13
+...............................................................................
+
+unittest.cpp:16: 
+PASSED:
+  CHECK( newTree.root == nullptr )
+with expansion:
+  nullptr == nullptr
+
+0.000 s: First Constructor
+0.001 s: Tests
+-------------------------------------------------------------------------------
+Tests
+  Second Constructor
+-------------------------------------------------------------------------------
+unittest.cpp:18
+...............................................................................
+
+unittest.cpp:21: 
+PASSED:
+  CHECK( newTree.data() == "Is this your question?" )
+with expansion:
+  "Is this your question?"
+  ==
+  "Is this your question?"
+
+unittest.cpp:22: 
+PASSED:
+  CHECK( newTree.animal() == "animal" )
+with expansion:
+  "animal" == "animal"
+
+0.000 s: Second Constructor
+0.000 s: Tests
+-------------------------------------------------------------------------------
+Tests
+  Third Constructor
+-------------------------------------------------------------------------------
+unittest.cpp:24
+...............................................................................
+
+unittest.cpp:28: 
+PASSED:
+  CHECK( thirdTree.data()== "Question?" )
+with expansion:
+  "Question?" == "Question?"
+
+unittest.cpp:29: 
+PASSED:
+  CHECK( thirdTree.animal()== "animal" )
+with expansion:
+  "animal" == "animal"
+
+unittest.cpp:30: 
+PASSED:
+  CHECK( left.empty() )
+with expansion:
+  true
+
+unittest.cpp:30: 
+PASSED:
+  CHECK( right.empty() )
+with expansion:
+  true
+
+0.000 s: Third Constructor
+0.000 s: Tests
+-------------------------------------------------------------------------------
+Tests
+  Height
+-------------------------------------------------------------------------------
+unittest.cpp:32
+...............................................................................
+
+unittest.cpp:35: 
+PASSED:
+  CHECK( testTree.height() == 5 )
+with expansion:
+  5 == 5
+
+0.000 s: Height
+0.000 s: Tests
+-------------------------------------------------------------------------------
+Tests
+  Empty
+-------------------------------------------------------------------------------
+unittest.cpp:37
+...............................................................................
+
+unittest.cpp:40: 
+PASSED:
+  CHECK( emptyTree.empty() == true )
+with expansion:
+  true == true
+
+0.000 s: Empty
+0.000 s: Tests
+-------------------------------------------------------------------------------
+Tests
+  Data
+-------------------------------------------------------------------------------
+unittest.cpp:42
+...............................................................................
+
+unittest.cpp:45: 
+PASSED:
+  CHECK( dataTree.data() == "Is it a mammal?" )
+with expansion:
+  "Is it a mammal?" == "Is it a mammal?"
+
+unittest.cpp:46: 
+PASSED:
+  CHECK( dataTree.animal() == "initialization" )
+with expansion:
+  "initialization" == "initialization"
+
+0.000 s: Data
+0.000 s: Tests
+-------------------------------------------------------------------------------
+Tests
+  Left
+-------------------------------------------------------------------------------
+unittest.cpp:48
+...............................................................................
+
+unittest.cpp:52: 
+PASSED:
+  CHECK( leftTree.root == testTree.root->left )
+with expansion:
+  0x000055a0e5061ea0 == 0x000055a0e5061ea0
+
+0.000 s: Left
+0.000 s: Tests
+-------------------------------------------------------------------------------
+Tests
+  Right
+-------------------------------------------------------------------------------
+unittest.cpp:54
+...............................................................................
+
+unittest.cpp:58: 
+PASSED:
+  CHECK( rightTree.root == testTree.root->right )
+with expansion:
+  0x000055a0e5062440 == 0x000055a0e5062440
+
+0.000 s: Right
+0.000 s: Tests
+===============================================================================
+All tests passed (13 assertions in 1 test case)
+
